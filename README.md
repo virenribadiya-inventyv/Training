@@ -1,3 +1,3 @@
 # Training
 
-This repo contains the assigned tasks during the internship at Inventyv Software Services Pvt.Ltd.
+This repo contains the tasks performed by me during the internship at Inventyv Software Services Pvt.Ltd.
