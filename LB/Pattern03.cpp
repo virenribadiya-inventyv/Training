@@ -8,13 +8,9 @@ int main(){
     int n,fact=1;
     cout<<"Enter n:";
     cin>>n;
-
-    for(int i=1;i<=n+(n-1);i=i+2){
-        for(int j=1;j<=i;j++){
-            fact = fact*j;
-        }
+    for(int i=3;i<(n*n)/2;i=i+2){
         cout<<fact<<" ";
-        fact = 1;
+        fact = fact*i*(i-1);
     }
     cout<<endl;
     return 0;
