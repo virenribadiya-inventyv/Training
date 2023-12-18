@@ -16,8 +16,8 @@ int main(){
             cout<<"Max:"<<x<<endl;
             return 0;
         }
-        cout<<"Max:"<<z<<endl;
-        return 0;
+        //cout<<"Max:"<<z<<endl;
+        //return 0;
     }
     else if(y>=z){
         cout<<"Max:"<<y<<endl;
