@@ -1,0 +1,193 @@
+
+.viewport{
+    width: 98vw;
+    height: 90vh;
+}
+
+
+.outer-box{
+    background-color: white;
+    border: 2px solid;
+    width: 90vw;
+    height: 85vh;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 6vh;
+    margin-left: 4vw;
+    margin-right: 4vh;
+    margin-bottom: 1vh;
+    box-shadow: 0 8px 12px rgba(5, 0, 0, 0.866), 0 3px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.card{
+    height: 80vh;
+    width: 40vw;
+    border-radius: 20px;
+    margin-top: 2vh;
+}
+
+.card-right{
+    height: 80vh;
+    width: 40vw;
+    border-radius: 20px;
+    margin-top: 2vh;
+    position: relative;
+}
+
+.card img{
+    max-width: 22vw;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    width: 35vw;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-content{
+    margin-left: 2vw;
+    width: 35vw;
+    margin-top: 11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content-right{
+    margin-left: 8vw;
+    width: 25vw;
+    margin-top: 25vh;
+    position: relative;
+    background-color: #adb2d3;
+    background-image: linear-gradient(315deg, #adb2d3 0%, #ff6b6c 74%);
+    border-radius: 8px;
+}
+
+.card-right img{
+    position: absolute;
+    z-index: 1;
+    max-width: 5vw;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 16vh;
+    margin-left: 18vw;
+}
+
+.labels{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: solid 2px white
+}
+
+.lebel-card{
+    
+    width: 10vw;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login input{
+    width: 22vw;
+    height: 5vh;
+    margin: 1vh 1vh;
+    font-size: medium;
+    padding-left: 1vw;
+    border-radius: 3px;
+    border: unset;
+}
+
+.login button{
+    width: 10vw;
+    height: 3vw;
+    font-size: 20px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+}
+
+.register button{
+    width: 10vw;
+    height: 3vw;
+    font-size: 20px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    
+}
+
+.register{
+    display:none;
+}
+
+.register input{
+    width: 22vw;
+    height: 5vh;
+    margin: 1vh 2vh;
+    font-size: medium;
+    padding-left: 1vw;
+    border-radius: 3px;
+    border: unset;
+}
+
+#chbox:checked ~ #login-card {
+    display: none;
+}
+
+#chbox:checked ~ #register-card {
+    display: block; 
+}
+
+#chbox:checked + .labels #dd .l-label{
+    pointer-events: auto;
+    color: bisque;
+    font-weight: unset;
+}
+
+#chbox:checked + .labels #dd2 .r-label{
+    pointer-events: none;
+    color: white;  
+    font-weight: bold;
+}
+
+.l-label{
+    pointer-events: none;
+    color: white;  
+    font-weight: bold;
+}
+
+.r-label{
+    pointer-events: auto;
+    color: bisque;
+}
+
+#chbox{
+    display: none;
+}
+
+
+
+
