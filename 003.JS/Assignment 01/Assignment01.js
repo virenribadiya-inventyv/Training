@@ -1,6 +1,6 @@
 (function () {
     arr = [1, 2, 3, 4, 5];
-    [first, ...rest] = arr;
+    [first, ...rest] = arr; //rest
     arr = rest;
     fun2(first, arr);
 })();
@@ -8,7 +8,7 @@
 function fun2(first, arr) {
     var sum = 0;
     arr2 = [6,7,8,9];
-    arr2 = [first, ...arr2, ...arr];
+    arr2 = [first, ...arr2, ...arr]; //spread
     console.log("New Array:", arr2);
     for (i of arr2) {
         sum = sum + i;
