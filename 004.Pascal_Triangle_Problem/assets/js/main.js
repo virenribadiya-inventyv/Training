@@ -4,7 +4,7 @@ do{
 
 let n = parseInt(str);
 let digitsArray = Array.from(String(n), Number);
-console.log(digitsArray); 
+//consolelog(digitsArray); 
 
 
 function getAllDigitCombinations(digitsArray) {
@@ -28,7 +28,7 @@ function getAllDigitCombinations(digitsArray) {
   }
 
   let combinations = getAllDigitCombinations(digitsArray);
-  console.log(combinations); // Output: ['1', '12', '123', '1234', '124', '13', '134', '14', '2', '23', '234', '24', '3', '34', '4']
+  //consolelog(combinations); // Output: ['1', '12', '123', '1234', '124', '13', '134', '14', '2', '23', '234', '24', '3', '34', '4']
   
 
   function permuteString(str) {
@@ -63,7 +63,7 @@ function getAllDigitCombinations(digitsArray) {
   }
   
   let permutationsOfCombinations = getAllPermutationsOfCombinations(combinations);
-  console.log(permutationsOfCombinations);
+  //consolelog(permutationsOfCombinations);
 
 function isPrime(n) {
     if (n===1) {
@@ -83,9 +83,11 @@ for(let el of permutationsOfCombinations){
     }
 }
 
-console.log("prime: ",primes);
+//consolelog("prime: ",primes);
 var maxPrime = Math.max(...primes);
-console.log("Highest in prime:", maxPrime);
+//consolelog("Highest in prime:", maxPrime);
+var tPrimes = primes.length
+
 
 var curr = [1];
 var next = [1,1];
@@ -94,7 +96,7 @@ var pascalContainer = document.getElementById("pascalsTriangle");
 var str =`&nbsp;&nbsp<span>${curr[0]}</span><br>&nbsp;&nbsp;`;
 var found=false
 while(!found){
-  console.log(curr,str);
+  ////consolelog(curr,str);
   curr=next;
   for(let i of curr){
     if(primes.includes(i)){
@@ -118,17 +120,22 @@ while(!found){
 }
 
 pascalContainer.innerHTML = str;
-console.log(primeIncluded);
+//consolelog(primeIncluded);
 
 for(let i of primeIncluded){
   const index = primes.indexOf(i);
-  if (index > -1) { // only splice array when item is found
-  primes.splice(index, 1); // 2nd parameter means remove one item only
+  if (index > -1){
+  primes.splice(index, 1); 
   }
 }
 
 primes = primes.sort((a, b) => a - b);
-console.log(primes); 
+//consolelog(primes);
+var lPrimes = primes.length; 
+var errorRatio = lPrimes/tPrimes;
+
+//consolelog("tprimes:",tPrimes);
+//console log("lprimes:",lPrimes);
 
 const error = document.getElementById("errorRatio");
-error.innerHTML = `Error Ratio: ${primes}`;
+error.innerHTML = `Prime numbers that are not present in the Pascal's Triangle: ${primes} <br> <br> Error Ratio: ${errorRatio.toFixed(4)} `;
