@@ -1,5 +1,5 @@
 # Problem Statement
-Input a number from the user, ensuring it's at least four digits long. Use permutations and combinations to generate various numbers from the input. Identify prime numbers among these and determine the largest prime. Create a Pascal's Triangle where the numbers within each row are smaller than the previously found largest prime number. Along with this, underline the prime numbers in the pascal trinagle which are present in derived prime numbers after permuations and combinations. If any derived prime number is not present in Pascal's Triangle, then display it as error ratio.
+Input a number from the user, ensuring it's at least four digits long. Use permutations and combinations to generate various numbers from the input. Identify prime numbers among these and determine the largest prime. Create a Pascal's Triangle where the numbers within each row are smaller than the previously found largest prime number. Along with this, underline the prime numbers in Pascal's triangle which are present in derived prime numbers after permutations and combinations. If any derived prime number is not present in Pascal's Triangle, then display it and also display the error ratio for the same.
 
 ## Solution 
 
@@ -179,7 +179,8 @@ The provided solution begins by obtaining a user-inputted number of at least fou
 <br>
 <br>
 
-[Screencast from 05-01-24 11:55:44 AM IST.webm](https://github.com/virenribadiyainventyv/Training/assets/153285621/08f41938-93ce-4673-b22c-94f3becfd9a8)
+[Screencast from 05-01-24 06:38:48 PM IST.webm](https://github.com/virenribadiyainventyv/Training/assets/153285621/51e2be19-c229-4f7d-aef3-fba609886523)
+
 
 <br>
 
