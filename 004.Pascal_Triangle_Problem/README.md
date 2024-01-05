@@ -175,6 +175,8 @@ error.innerHTML = `Error Ratio: ${primes}`;
 
 The provided solution begins by obtaining a user-inputted number of at least four digits. It then utilizes permutations and combinations to generate various numbers from the input and identifies prime numbers among them, determining the largest prime. A Pascal's Triangle is constructed with numbers in each row smaller than the identified largest prime. Prime numbers from this triangle, underlined if present in the derived primes, are displayed. The solution also showcases an error ratio by indicating prime numbers from the derived set that aren't present in the Pascal's Triangle primes.
 
+[Screencast from 05-01-24 11:55:44 AM IST.webm](https://github.com/virenribadiyainventyv/Training/assets/153285621/08f41938-93ce-4673-b22c-94f3becfd9a8)
+
 
 #### Author
 - [Viren Ribadiya](https://github.com/virenribadiyainventyv)
