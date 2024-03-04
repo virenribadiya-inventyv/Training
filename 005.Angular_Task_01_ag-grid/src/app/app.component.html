@@ -1,0 +1,16 @@
+<!-- The AG Grid component -->
+<ag-grid-angular class="ag-theme-quartz"
+style="height: 500px;" 
+[rowData]="rowData" 
+[columnDefs]="colDefs"
+[defaultColDef]="defaultColDef"
+[animateRows]="true"
+[rowSelection]="'multiple'" 
+(cellClicked)="onCellClicked($event)">
+</ag-grid-angular>
+
+<br><br>
+<div>Cell click data: {{cellClickData | json}}</div>
+
+<br><br>
+<button (click)="clearSelection()">clear Selection</button>
